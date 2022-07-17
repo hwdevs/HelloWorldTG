@@ -25,8 +25,9 @@ load_dotenv()
 
 bot = Client(
     "kiizu@HelloWorld",
-    session_string=os.getenv("SESSION_STR"),
-    in_memory=True,
+    api_id=os.getenv("API_ID"),
+    api_hash=os.getenv("API_HASH"),
+    bot_token=os.getenv("BOT_TOKEN"),
     plugins=dict(
         root="helloworld.plugins"
     )
